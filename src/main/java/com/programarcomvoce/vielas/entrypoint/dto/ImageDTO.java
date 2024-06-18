@@ -4,9 +4,12 @@ import java.util.Date;
 
 public record ImageDTO(
   Long id,
-  String uuid,
-  String name,
-  String author,
-  String imageUrl,
-  Date date
+  String url,
+  String title,
+  String description,
+  String category,
+  Date date,
+  String owner,
+  String licenseType,
+  String use
 ) {}
