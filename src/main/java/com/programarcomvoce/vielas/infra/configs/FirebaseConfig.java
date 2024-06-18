@@ -3,20 +3,27 @@ package com.programarcomvoce.vielas.infra.configs;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
-import com.google.firebase.cloud.StorageClient;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-import java.io.FileInputStream;
 import java.io.IOException;
+// import java.io.InputStream;
 
+@Configuration
 public class FirebaseConfig {
-  public static void initializeFirebase() throws IOException {
-    FileInputStream serviceAccount =
-    new FileInputStream("path/to/serviceAccountKey.json");
-    
-    FirebaseOptions options = new FirebaseOptions.Builder()
-      .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+  @Bean
+  public FirebaseApp initializeFirebaseApp() throws IOException {
+    // ClassLoader classLoader = FirebaseConfig.class.getClassLoader();
+    // InputStream serviceAccount = classLoader.getResourceAsStream("serviceAccountKey.json");
+
+    // if (serviceAccount == null) {
+    //   throw new IllegalArgumentException("Arquivo serviceAccountKey.json não encontrado");
+    // }
+
+    FirebaseOptions options = FirebaseOptions.builder()
+      .setCredentials(GoogleCredentials.getApplicationDefault())
       .build();
-    
-    FirebaseApp.initializeApp(options);    
+
+    return FirebaseApp.initializeApp(options);
   }
 }
