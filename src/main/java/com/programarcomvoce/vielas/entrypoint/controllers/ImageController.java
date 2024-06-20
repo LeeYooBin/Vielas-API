@@ -36,7 +36,16 @@ public class ImageController {
     }
 
     try {
-      Image img = imageService.uploadImage(formData.getUrl(), formData.getTitle(), formData.getDescription(), formData.getCategory(), formData.getOwner(), formData.getLicenseType(), formData.getUse());
+      Image img = imageService.uploadImage(
+        formData.getUrl(),
+        formData.getTitle(),
+        formData.getDescription(),
+        formData.getCategory(),
+        formData.getDate(),
+        formData.getOwner(),
+        formData.getLicenseType(),
+        formData.getUse()
+      );
       return ResponseEntity.ok(convertToDTO(img));
     } catch (IOException e) {
       e.printStackTrace();

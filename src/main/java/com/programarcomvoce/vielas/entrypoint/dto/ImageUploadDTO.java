@@ -1,14 +1,24 @@
 package com.programarcomvoce.vielas.entrypoint.dto;
 
+import java.util.Date;
+
 public class ImageUploadDTO {
   private String url;
   private String title;
   private String description;
   private String category;
+  private Date date;
   private String owner;
   private String licenseType;
   private String use;
 
+  public Date getDate() {
+    return this.date;
+  }
+
+  public void setDate(Date date) {
+    this.date = date;
+  }
 
   public String getUrl() {
     return url;

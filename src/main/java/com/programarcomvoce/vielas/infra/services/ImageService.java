@@ -22,6 +22,7 @@ public class ImageService {
     String title, 
     String description, 
     String category,
+    Date date,
     String owner, 
     String licenseType, 
     String use
@@ -31,6 +32,7 @@ public class ImageService {
     image.setTitle(title);
     image.setDescription(description);
     image.setCategory(category);
+    image.setDate(date);
     image.setDate(new Date());
     image.setOwner(owner);
     image.setLicenseType(licenseType);
