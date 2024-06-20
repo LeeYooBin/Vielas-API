@@ -43,21 +43,6 @@
       <artifactId>jjwt-api</artifactId>
       <version>0.12.5</version>
     </dependency>
-
-    <!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-admin -->
-    <dependency>
-      <groupId>com.google.firebase</groupId>
-      <artifactId>firebase-admin</artifactId>
-      <version>9.2.0</version>
-    </dependency>
-
-
-    <!-- https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv -->
-    <!-- <dependency>
-      <groupId>io.github.cdimascio</groupId>
-      <artifactId>java-dotenv</artifactId>
-      <version>5.2.2</version>
-    </dependency> -->
 	</dependencies>
 
 	<build>
