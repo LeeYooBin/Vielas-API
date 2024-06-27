@@ -1,6 +1,6 @@
 package com.programarcomvoce.vielas.entrypoint.controllers;
 
-import com.programarcomvoce.vielas.domain.models.Image;
+import com.programarcomvoce.vielas.domain.models.Image.Image;
 import com.programarcomvoce.vielas.entrypoint.dto.ImageDTO;
 import com.programarcomvoce.vielas.entrypoint.dto.ImageUploadDTO;
 import com.programarcomvoce.vielas.infra.services.ImageService;

@@ -1,4 +1,4 @@
-package com.programarcomvoce.vielas.domain.models;
+package com.programarcomvoce.vielas.domain.models.Image;
 
 import java.util.Date;
 

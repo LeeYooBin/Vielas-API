@@ -1,6 +1,6 @@
 package com.programarcomvoce.vielas.infra.services;
 
-import com.programarcomvoce.vielas.domain.models.Image;
+import com.programarcomvoce.vielas.domain.models.Image.Image;
 import com.programarcomvoce.vielas.infra.repository.ImageRepository;
 
 import org.springframework.stereotype.Service;
